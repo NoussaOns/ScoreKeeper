@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/football_stadium_background_in_realistic_style_23_2147859937"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_a"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/goal_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="64sp" />
+
+            <TextView
+                android:id="@+id/foul_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginBottom="32dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/goal_button_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goal"
+                android:textSize="36dp" />
+
+            <Button
+                android:id="@+id/foul_button_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/foul"
+                android:textSize="36dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_b"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/goal_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="64sp" />
+
+            <TextView
+                android:id="@+id/foul_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginBottom="32dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/goal_button_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goal"
+                android:textSize="36dp" />
+
+            <Button
+                android:id="@+id/foul_button_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/foul"
+                android:textSize="36dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:textSize="36dp" />
+
+</LinearLayout>
